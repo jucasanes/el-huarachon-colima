@@ -1,3 +1,5 @@
+/* Diseño general */
+
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +9,8 @@
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/* Barra de navegación */
 
 .headerbar{
     display: none;
@@ -89,6 +93,74 @@
     cursor: pointer;
 }
 
+/* Sección de contenido */
+
+.home{
+    background-color: rgb(255,248,220);
+    padding: 0 7vw;
+}
+
+.main_slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.main_slide div:nth-child(2){
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.main_slide div:nth-child(1){
+    flex: 1;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.main_slide div:nth-child(1) p{
+    font-size: 13px;
+    padding: 20px 0;
+}
+
+.main_slide div:nth-child(1) span{
+    color: rgb(210,105,30);
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: rgb(210,105,30);
+}
+
+.red_btn{
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 160px;
+    font-weight: bold;
+    color: aliceblue;
+    line-height: 50px;
+    background-color: rgb(210,105,30);
+    border-radius: 10px;
+    border: 1px solid rgb(210,105,30);
+    box-shadow: 0 10px 15px rgb(222,184,135);
+    transition: all 0.2s;
+}
+
+.red_btn i{
+    color: aliceblue;
+    transition: all 0.2s;
+}
+
+.red_btn:hover{
+    background-color: white;
+    box-shadow: 0 2px 15px rgb(210,105,30);
+    border: 1px solid rgb(222,184,135);
+    color: rgb(222,184,135);
+}
+
+.red_btn:hover i{
+    color: rgb(222,184,135);
+}
+
 /* DIMENSIONES PARA TABLET */
 
 @media only screen and (max-width: 768px){
@@ -148,5 +220,35 @@
     .headerbar .account ul{
         justify-content: space-between;
     }
+    .main_slide div:nth-child(2) img{
+        width: auto;
+        height: auto;
+    }
 }
 
+/* Dimensiones para dispositivos móviles */
+
+@media only screen and (max-width: 550px){
+    .main_slide div:nth-child(1){
+        font-size: 18px;
+    }
+    .main_slide div:nth-child(1) p{
+        padding-top: 5px;
+        margin: 10px 0;
+        font-size: 11px;
+    }
+    .red_btn{
+        margin-top: 10px;
+        width: 120px;
+        line-height: 30px;
+        font-size: 12px;
+        padding: 0 10px;
+    }
+    .main_slide div:nth-child(1) span{
+        text-underline-offset: 5px;
+    }
+    .main_slide div:nth-child(2) img{
+        width: 70vw;
+        height: auto;
+    }
+}
