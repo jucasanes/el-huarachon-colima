@@ -188,7 +188,7 @@ header{
 }
 
 .item div{
-    height: 260px;
+    height: 160px;
 }
 
 .item p{
@@ -325,6 +325,16 @@ header{
     border-radius: 25px;
     margin-bottom: 30px;
     box-shadow: 0 2px 10px rgb(119, 119, 119, 0.5);
+    width: 220px;
+    padding: 15px;
+    padding-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.main_slide3 .fav-food .item div{
+    height: 160px;
+    margin-bottom: 15px;
 }
 
 /* DIMENSIONES PARA TABLET */
