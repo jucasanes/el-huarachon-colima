@@ -223,6 +223,68 @@ header{
     color: aliceblue;
 }
 
+/* Items de contenido principal | Segunda parte. */
+
+.main_slide2{
+    margin: 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foodimg{
+    flex: 0.5;
+}
+
+.foodimg img{
+    max-width: 500px;
+    width: 45vw;
+}
+
+.question{
+    flex: 0.5;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.question h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.q-ans{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.q-ans img{
+    width: 75px;
+    border-radius: 25px;
+}
+
+.q-ans div:first-child{
+    padding: 20px;
+    border-radius: 50%;
+    height: 85px;
+    text-align: center;
+    background-color: white;
+    margin-right: 20px;
+}
+
+.q-ans div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+}
+
+.q-ans div:nth-child(2) p{
+    margin-top: 10px;
+    font-size: 13px;
+}
+
 /* DIMENSIONES PARA TABLET */
 
 @media only screen and (max-width: 768px){
@@ -285,6 +347,27 @@ header{
     .main_slide div:nth-child(2) img{
         width: auto;
         height: auto;
+    }
+    .foodimg{
+        flex: 1;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .foodimg{
+        width: 70vw;
+    }
+    .question{
+        flex: 1;
+        margin-top: 30px;
+    }
+    .question h2{
+        font-size: 25px;
+    }
+    .question h2{
+        font-size: 25px;
+    }
+    .q-ans div:nth-child(2) p{
+        font-size: 11px;
     }
 }
 
