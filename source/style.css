@@ -10,6 +10,35 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Fuentes */
+
+@font-face {
+    font-family: 'Coffee Spark';
+    src: url('/font/coffee_spark/Coffee\ Spark.otf');
+}
+
+@font-face {
+    font-family: 'kolak';
+    src: url('/font/kolak/KOLAK.otf');
+}
+
+@font-face {
+    font-family: 'Letter for Learners';
+    src: url('/font/letters_for_learners/Letters\ for\ Learners.ttf');
+}
+
+li{
+    font-family: 'Coffee Spark';
+}
+
+.home .main_slide h1, .item h3, .question h2, .q-ans h4, .main_slide3 h3{
+    font-family: 'kolak';
+}
+
+body{
+    font-family: 'Letter for Learners';
+}
+
 /* Barra de navegación */
 
 .headerbar{
@@ -168,7 +197,6 @@ header{
 
 .item img {
     width: 160px;
-    height: auto;
     margin-bottom: 15px;
     padding: 5px 0 5px 0;
 }
@@ -188,7 +216,7 @@ header{
 }
 
 .item div{
-    height: 160px;
+    height: 260px;
 }
 
 .item p{
@@ -299,7 +327,7 @@ header{
 .main_slide3 .fav-head{
     text-align: center;
     width: 450px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .main_slide3 .fav-head h3{
@@ -335,6 +363,28 @@ header{
 .main_slide3 .fav-food .item div{
     height: 160px;
     margin-bottom: 15px;
+}
+
+.main_slide3 .fav-food .item img{
+    width: 160px;
+    margin-bottom: 15px;
+    border-radius: 17px;
+}
+
+.main_slide3 .fav-price{
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.main_slide3 .dsgn{
+    background-color: rgb(210,105,30, 0.25);
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    border-radius: 10px;
 }
 
 /* DIMENSIONES PARA TABLET */
@@ -421,6 +471,16 @@ header{
     .q-ans div:nth-child(2) p{
         font-size: 11px;
     }
+    .main_slide3{
+        margin-top: 100px;
+    }
+    .main_slide3 .dsgn{
+        height: 60%;
+    }
+    .main_slide3 .fav-head{
+        width: 80%;
+        margin-bottom: 20px;
+    }
 }
 
 /* Dimensiones para dispositivos móviles */
@@ -447,5 +507,27 @@ header{
     .main_slide div:nth-child(2) img{
         width: 70vw;
         height: auto;
+    }
+    .food-items{
+        padding: 10px 0;
+    }
+    .item{
+        width: 60%;
+        padding: 30px 5px;
+    }
+    .item h3{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .main_slide3 .fav-head{
+        width: 100%;
+    }.main_slide3 .fav-head h3{
+        font-size: 25px;
+    }
+    .main_slide3 .fav-head p{
+        font-size: 13px;
+    }
+    .main_slide3 .dsgn{
+        display: none;
     }
 }
