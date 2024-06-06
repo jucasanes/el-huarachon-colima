@@ -393,7 +393,7 @@ header{
 }
 
 .main_slide4{
-    margin-top: 270px;  /* Verificar este margen en imagen. */
+    margin-top: 40px;  /* Verificar este margen en imagen. */
     display: flex;
     flex-wrap: wrap-reverse;
 }
@@ -406,10 +406,10 @@ header{
 .main_slide4 .chef{
     flex: 0.5;
     text-align: right;
+    margin-top: 30px;
 }
 
 .main_slide4 .chef img{
-    margin-top: -130px;
     width: 30vw;
     max-width: 490px;
     border-radius: 25px;
@@ -536,6 +536,56 @@ header{
     border-radius: 0 10px 10px 0;
 }
 
+.footer{
+    background-color: rgb(222,184,135);
+    padding: 60px 0;|
+    border-top: 2px solid rgb(255,248,220);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-1 .logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-1 .logo img{
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-1 p{
+    cursor: pointer;
+    font-size: 14px;
+    padding: 2px;
+    color: rgb(255,248,220);
+}
+
+.footer-2{
+    text-align: center;
+    cursor: pointer;
+}
+
+.footer-2 h2, em{
+    font-family: 'kolak';
+}
+
+.footer-2 em{
+    color: rgb(210,105,30);
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(255,248,220);
+    padding: 5px 10px;
+}
+
+.footer-2 img{
+    width: 250px;
+    margin-bottom: -50px;
+}
+
 /* DIMENSIONES PARA TABLET */
 
 @media only screen and (max-width: 825px){
@@ -630,9 +680,6 @@ header{
         width: 80%;
         margin-bottom: 20px;
     }
-    .main_slide4{
-        margin-top: 200px;
-    }
     .main_slide4 .chef-feed{
         flex: 1;
     }
@@ -656,6 +703,12 @@ header{
         line-height: 40px;
         width: 120px;
         font-size: 12px;
+    }
+    .footer .footer-1 div{
+        margin: 0;
+    }
+    .footer div{
+        margin-bottom: 40px;
     }
 }
 
@@ -716,5 +769,14 @@ header{
     .letter-head{
         flex: 1;
         text-align: center;
+    }
+    .footer div:last-child{
+        margin-bottom: 0;
+    }
+    .footer{
+        padding-bottom: 25px;
+    }
+    .footer-2 h2{
+        font-size: 20px;
     }
 }
